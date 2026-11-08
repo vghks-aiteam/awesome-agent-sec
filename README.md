@@ -1,10 +1,10 @@
 # Awesome Agent Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> AI agent 安全資源精選：涵蓋工具使用、網頁瀏覽、程式碼執行與跨 agent 通訊。
+> AI agent 安全資源索引：涵蓋工具使用、網頁瀏覽、程式碼執行與跨 agent 通訊。
 
-整理 prompt injection、MCP 安全、memory poisoning、agent 評測、權限控制、sandbox 與漏洞揭露。每筆資源附上用途與貢獻說明；閱讀研究結果時，請一併檢視其 threat model 與適用條件。
+廣泛整理 AI agent 的攻擊、防禦、身分授權、secrets、runtime、供應鏈、監控與事件應變資源。每筆資源附上用途與貢獻說明；閱讀研究結果時，請一併檢視其 threat model 與適用條件。
 
-[English](README.en.md) · [繁體中文導讀](README.zh-TW.md) · [參與維護](CONTRIBUTING.md) · [整理與來源紀錄](docs/curation.md)
+[English](README.en.md) · [繁體中文導讀](README.zh-TW.md) · [參與維護](CONTRIBUTING.md) · [資源狀態與版本](RESOURCE_STATUS.md) · [整理與來源紀錄](docs/curation.md)
 
 ## 目錄
 
@@ -17,12 +17,17 @@
 - [系統與架構層防禦](#系統與架構層防禦)
 - [模型與 prompt 層防禦](#模型與-prompt-層防禦)
 - [MCP 安全](#mcp-安全)
-- [紅隊與執行環境工具](#紅隊與執行環境工具)
+- [身分與授權](#身分與授權)
+- [Secrets 與 credential 管理](#secrets-與-credential-管理)
+- [Runtime 隔離與供應鏈安全](#runtime-隔離與供應鏈安全)
+- [監控、稽核與事件應變](#監控稽核與事件應變)
+- [紅隊與 guardrail 工具](#紅隊與-guardrail-工具)
 - [漏洞揭露與案例研究](#漏洞揭露與案例研究)
 - [廠商工程與評估報告](#廠商工程與評估報告)
 - [Alignment 與相關研究](#alignment-與相關研究)
 - [2026 年研究追蹤](#2026-年研究追蹤)
 - [部落格與導讀](#部落格與導讀)
+- [維護與資料狀態](#維護與資料狀態)
 - [參與維護](#參與維護)
 - [授權](#授權)
 
@@ -31,13 +36,13 @@
 | 你的目標 | 建議閱讀順序 |
 | --- | --- |
 | 理解問題 | 基礎概念 → 威脅模型與標準 → 漏洞揭露與案例研究。 |
-| 開發能存取敏感資料或工具的 agent | 系統與架構層防禦 → MCP 安全 → 紅隊與執行環境工具。 |
+| 開發能存取敏感資料或工具的 agent | 系統與架構層防禦 → 身分與授權 → MCP 安全 → Runtime 隔離與供應鏈安全。 |
 | 評估防禦方法 | Benchmark 與評測 → adaptive attack → 同時比較攻擊成功率與正常任務完成率。 |
 | 探索研究方向 | 記憶與 multi-agent 安全 → 2026 年研究追蹤。 |
 
 Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心繞過模型的安全行為。兩者可能重疊，但評測所回答的問題不同。僅有較低的攻擊成功率，無法證明 agent 既安全又能完成任務。
 
-**資源標示：**論文預設連到 arXiv；標準指官方框架或規格；工具指實作；研究揭露指研究者或廠商的漏洞報告；報告指工程實務或評估。arXiv 連結不代表已通過 peer review。研究追蹤區另行標示尚未獨立確認正式出版狀態的近期 preprint。
+**資源標示：**論文預設連到 arXiv；標準指官方框架或規格；工具指實作；研究揭露指研究者或廠商的漏洞報告；報告指工程實務或評估。arXiv 連結不代表已通過 peer review。論文出版狀態、工具 release、查核日期與規格版本另見[資源狀態表](RESOURCE_STATUS.md)；未確認的狀態會明確標示。
 
 ## 基礎概念
 
@@ -119,19 +124,53 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 - [MCP Security Notification: Tool Poisoning Attacks](https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks) — **研究揭露 · 2025**。介紹透過工具描述發動的攻擊，包括 tool shadowing 與 rug pull。
 - [Jumping the line: How MCP servers can attack you before you ever use them](https://blog.trailofbits.com/2025/04/21/jumping-the-line-how-mcp-servers-can-attack-you-before-you-ever-use-them/) — **研究文章 · 2025**。說明為什麼在工具被呼叫之前，tool metadata 就已經成為攻擊面。
 
-## 紅隊與執行環境工具
+## 身分與授權
+
+以下通用基礎元件對應 agent 的身分、授權與政策需求，需依實際部署整合。
+
+- [OAuth 2.0 Security Best Current Practice — RFC 9700](https://www.rfc-editor.org/rfc/rfc9700) — **規格 · RFC 9700**。整理 OAuth 2.0 的安全實務，適用於 agent 與 MCP 服務的 authorization 設計。
+- [Resource Indicators for OAuth 2.0 — RFC 8707](https://www.rfc-editor.org/rfc/rfc8707) — **規格 · RFC 8707**。將 access token 限定到特定 resource，協助設計跨工具的 audience 邊界。
+- [OAuth 2.0 Token Exchange — RFC 8693](https://www.rfc-editor.org/rfc/rfc8693) — **規格 · RFC 8693**。定義 token exchange 與 delegation 的基礎機制，供任務範圍的權限設計參考。
+- [SPIFFE](https://spiffe.io/docs/latest/spiffe-about/overview/) — **規格導讀**。介紹 workload identity 與可驗證身分，供 agent service 與工具服務之間的驗證設計參考。
+- [SPIRE](https://github.com/spiffe/spire) — **工具**。SPIFFE 的 runtime 實作，提供 workload attestation 與身分憑證簽發。
+- [OpenFGA](https://github.com/openfga/openfga) — **工具**。以 relationship-based access control 表達物件授權，可用於 agent 存取使用者或租戶資料時的外部檢查。
+- [Open Policy Agent](https://github.com/open-policy-agent/opa) — **工具**。在模型之外評估 policy，可整合到工具 gateway 的動作與參數授權流程。
+
+## Secrets 與 credential 管理
+
+- [OWASP Secrets Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html) — **指引**。涵蓋 secret 的儲存、分發、輪替與撤銷，供 agent 工具憑證生命週期管理參考。
+- [OpenBao](https://github.com/openbao/openbao) — **工具**。管理 secret、certificate 與 key，可作為 agent 工具憑證發放與輪替的基礎元件。
+- [Gitleaks](https://github.com/gitleaks/gitleaks) — **工具**。掃描 Git repository 與檔案中的 secret，可用於檢查 coding agent 產出或修改的內容。
+- [TruffleHog](https://github.com/trufflesecurity/trufflehog) — **工具**。偵測並可驗證多種外洩 credential，供程式碼與其他資料來源的洩漏調查使用。
+
+## Runtime 隔離與供應鏈安全
+
+- [gVisor](https://gvisor.dev/) — **執行環境**。以 application kernel 隔離 container 中的工作負載。
+- [Firecracker](https://firecracker-microvm.github.io/) — **執行環境**。用於隔離工作負載的 microVM 技術。
+- [NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) — **執行環境**。為 agent 提供檔案系統、網路與政策控制。
+
+- [Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/) — **指引**。定義 Kubernetes workload 的安全限制，供以 Pod 執行 agent 或工具時設定隔離政策參考。
+- [SLSA Specification v1.2](https://slsa.dev/spec/v1.2/) — **規格 · v1.2**。以 build provenance 與供應鏈要求檢視 agent runtime、工具與套件的建置來源。
+- [Sigstore Cosign](https://github.com/sigstore/cosign) — **工具**。簽署與驗證 container、binary 及其他 artifact，供 agent 工具與部署產物的來源驗證使用。
+
+## 監控、稽核與事件應變
+
+- [OpenTelemetry GenAI Semantic Conventions](https://github.com/open-telemetry/semantic-conventions-genai) — **規格**。整理 GenAI 與 MCP 的 spans、metrics、events；應依採用版本確認各欄位的穩定性。
+- [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) — **工具**。接收、處理與匯出 telemetry，可整合 agent trace 與工具執行紀錄。
+- [Falco](https://github.com/falcosecurity/falco) — **工具**。提供 host 與 container 的 runtime 事件偵測，可用於觀察 agent 執行環境的系統層行為。
+- [OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html) — **指引**。說明安全事件記錄、敏感欄位處理與 log 保護，供工具呼叫 audit trail 設計參考。
+- [NIST SP 800-61 Revision 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **指引 · Rev. 3**。將事件應變整合到風險管理，可用於規劃 agent 事件的偵測、處置與復原流程。
+
+## 紅隊與 guardrail 工具
 
 這些工具作用於不同層次；scanner、classifier、policy framework 與 sandbox 各有用途，不能互相替代。
 
 - [garak](https://github.com/NVIDIA/garak) — **工具**。提供 probes 與 detectors 的 LLM 弱點掃描器。[論文](https://arxiv.org/abs/2406.11036)。
-- [PyRIT](https://github.com/Azure/PyRIT) — **工具**。用於組織 generative AI 風險辨識與紅隊測試的框架。[論文](https://arxiv.org/abs/2410.02828)。
+- [PyRIT](https://github.com/microsoft/PyRIT) — **工具**。用於組織 generative AI 風險辨識與紅隊測試的框架。[論文](https://arxiv.org/abs/2410.02828)。
 - [promptfoo](https://github.com/promptfoo/promptfoo) — **工具**。提供 prompt、agent 與 RAG 應用程式的評測及紅隊測試流程。
 - [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) — **工具**。為 LLM 應用程式加入可程式化的 guardrail。
 - [Purple Llama](https://github.com/meta-llama/PurpleLlama) — **工具集**。Meta 提供的安全評測資源與防護工具。
 - [Prompt Guard 86M](https://huggingface.co/meta-llama/Prompt-Guard-86M) — **模型**。分類一般輸入、prompt injection 與 jailbreak 嘗試；屬於偵測器，不能視為授權邊界。
-- [gVisor](https://gvisor.dev/) — **執行環境**。以 application kernel 隔離 container 中的工作負載。
-- [Firecracker](https://firecracker-microvm.github.io/) — **執行環境**。用於隔離工作負載的 microVM 技術。
-- [NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) — **執行環境**。為 agent 提供檔案系統、網路與政策控制。
 
 ## 漏洞揭露與案例研究
 
@@ -218,6 +257,12 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 - [New prompt injection papers: Agents Rule of Two and The Attacker Moves Second](https://simonwillison.net/2025/Nov/2/new-prompt-injection-papers/) — **研究評論 · 2025**。將部署限制與 adaptive evaluation 放在一起討論。
 - [Simon Willison's prompt injection archive](https://simonwillison.net/tags/prompt-injection/) — **持續更新**。追蹤研究、事件與工程討論的資源入口。
 - [Embrace The Red](https://embracethered.com/blog/) — **研究部落格**。提供助理、記憶、工具與 computer use 的第一手安全研究。
+
+## 維護與資料狀態
+
+[資源狀態表](RESOURCE_STATUS.md)記錄論文出版狀態、工具 release、模型 revision、規格版本與查核日期；完整資料及證據 URL 保留在 [resources.json](resources.json)。收錄表示與主題相關，不代表推薦或安全背書。
+
+GitHub Actions 會檢查中英文資源一致性、metadata 與內部連結，並於 push、手動執行及每週一產生外部連結報告。外部網站的 403、429 與 timeout 會保留為待確認項目；metadata 超過 90 天則提醒重新查核。自動檢查不會擅自改寫出版或維護狀態。
 
 ## 參與維護
 

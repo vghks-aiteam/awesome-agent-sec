@@ -1,10 +1,10 @@
 # Awesome Agent Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated reading list for securing AI agents that use tools, browse the web, execute code, or communicate with other agents.
+> A broad resource index for AI agent security across tools, browsing, code execution, and inter-agent communication.
 
-Resources on prompt injection, MCP security, memory poisoning, agent evaluation, privilege control, sandboxing, and vulnerability disclosures. Each entry explains what it contributes; research results should be read within their stated threat models.
+Resources on agent attacks, defenses, identity, secrets, runtimes, supply chains, monitoring, and incident response. Each entry explains what it contributes; research results should be read within their stated threat models.
 
-[繁體中文首頁](README.md) · [繁體中文導讀](README.zh-TW.md) · [Contributing](CONTRIBUTING.md) · [Curation and source notes](docs/curation.md)
+[繁體中文首頁](README.md) · [繁體中文導讀](README.zh-TW.md) · [Contributing](CONTRIBUTING.md) · [Resource status and versions](RESOURCE_STATUS.md) · [Curation and source notes](docs/curation.md)
 
 ## Contents
 
@@ -17,12 +17,17 @@ Resources on prompt injection, MCP security, memory poisoning, agent evaluation,
 - [System and architectural defenses](#system-and-architectural-defenses)
 - [Model and prompt defenses](#model-and-prompt-defenses)
 - [MCP security](#mcp-security)
-- [Red teaming and runtime tools](#red-teaming-and-runtime-tools)
+- [Identity and authorization](#identity-and-authorization)
+- [Secrets and credentials](#secrets-and-credentials)
+- [Runtime isolation and supply-chain security](#runtime-isolation-and-supply-chain-security)
+- [Monitoring, audit and incident response](#monitoring-audit-and-incident-response)
+- [Red teaming and guardrails](#red-teaming-and-guardrails)
 - [Vulnerability disclosures and case studies](#vulnerability-disclosures-and-case-studies)
 - [Vendor engineering and evaluation reports](#vendor-engineering-and-evaluation-reports)
 - [Alignment and adjacent research](#alignment-and-adjacent-research)
 - [2026 research watchlist](#2026-research-watchlist)
 - [Blogs and explainers](#blogs-and-explainers)
+- [Maintenance and metadata](#maintenance-and-metadata)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -31,13 +36,13 @@ Resources on prompt injection, MCP security, memory poisoning, agent evaluation,
 | Goal | Reading route |
 | --- | --- |
 | Understand the problem | Foundations → threat models → vulnerability disclosures. |
-| Build an agent with sensitive data or tools | Architectural defenses → MCP security → runtime tools. |
+| Build an agent with sensitive data or tools | Architectural defenses → identity and authorization → MCP security → runtime isolation. |
 | Evaluate a defense | Benchmarks → adaptive attacks → compare attack success with legitimate task completion. |
 | Explore research directions | Memory and multi-agent security → 2026 research watchlist. |
 
 Prompt injection concerns an application's instruction and trust boundaries. Jailbreaking concerns bypassing model safety behavior; the two can overlap, but their evaluations answer different questions. A low attack success rate alone does not establish that an agent is secure or useful.
 
-**Reading labels:** Paper = research manuscript, linked to arXiv unless stated otherwise; standard = official framework or specification; tool = implementation; disclosure = a researcher's or vendor's vulnerability report; report = engineering account or evaluation. An arXiv link does not establish peer review. The watchlist explicitly identifies recent preprints whose publication status has not been independently checked.
+**Reading labels:** Paper = research manuscript, linked to arXiv unless stated otherwise; standard = official framework or specification; tool = implementation; disclosure = a researcher's or vendor's vulnerability report; report = engineering account or evaluation. An arXiv link does not establish peer review. Publication status, tool releases, check dates, and specification versions are recorded in the [resource status table](RESOURCE_STATUS.md); unverified states are explicit.
 
 ## Foundations
 
@@ -119,19 +124,53 @@ Evaluate these methods against adaptive attacks as well as ordinary tasks. Train
 - [MCP Security Notification: Tool Poisoning Attacks](https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks) — **Disclosure · 2025.** Introduces attacks through tool descriptions, including tool shadowing and rug pulls.
 - [Jumping the line: How MCP servers can attack you before you ever use them](https://blog.trailofbits.com/2025/04/21/jumping-the-line-how-mcp-servers-can-attack-you-before-you-ever-use-them/) — **Research article · 2025.** Explains why tool metadata becomes an attack surface before a tool is called.
 
-## Red teaming and runtime tools
+## Identity and authorization
+
+These general-purpose building blocks address agent identity, authorization, and policy needs and require deployment-specific integration.
+
+- [OAuth 2.0 Security Best Current Practice — RFC 9700](https://www.rfc-editor.org/rfc/rfc9700) — **Specification · RFC 9700.** Security guidance for OAuth 2.0 deployments, including authorization used by agents and MCP services.
+- [Resource Indicators for OAuth 2.0 — RFC 8707](https://www.rfc-editor.org/rfc/rfc8707) — **Specification · RFC 8707.** Binds token requests to intended resources, supporting audience boundaries across tools.
+- [OAuth 2.0 Token Exchange — RFC 8693](https://www.rfc-editor.org/rfc/rfc8693) — **Specification · RFC 8693.** Defines token exchange and delegation mechanisms relevant to task-scoped agent authority.
+- [SPIFFE](https://spiffe.io/docs/latest/spiffe-about/overview/) — **Specification overview.** Introduces verifiable workload identities for authentication between agent and tool services.
+- [SPIRE](https://github.com/spiffe/spire) — **Tool.** A SPIFFE runtime providing workload attestation and issuance of identity credentials.
+- [OpenFGA](https://github.com/openfga/openfga) — **Tool.** Relationship-based authorization for external checks on an agent’s access to user or tenant objects.
+- [Open Policy Agent](https://github.com/open-policy-agent/opa) — **Tool.** A general-purpose policy engine that can support action and parameter authorization at a tool gateway.
+
+## Secrets and credentials
+
+- [OWASP Secrets Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html) — **Guidance.** Covers secret storage, distribution, rotation, and revocation for managing tool credentials.
+- [OpenBao](https://github.com/openbao/openbao) — **Tool.** Manages secrets, certificates, and keys as infrastructure for issuing and rotating tool credentials.
+- [Gitleaks](https://github.com/gitleaks/gitleaks) — **Tool.** Scans repositories and files for secrets, including changes produced by coding agents.
+- [TruffleHog](https://github.com/trufflesecurity/trufflehog) — **Tool.** Detects and can verify leaked credentials across code and other data sources during investigations.
+
+## Runtime isolation and supply-chain security
+
+- [gVisor](https://gvisor.dev/) — **Runtime.** Application kernel for isolating containerized workloads.
+- [Firecracker](https://firecracker-microvm.github.io/) — **Runtime.** MicroVM technology for workload isolation.
+- [NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) — **Runtime.** Agent execution environment with filesystem, network, and policy controls.
+
+- [Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/) — **Guidance.** Defines Kubernetes workload restrictions relevant to agents or tools running in pods.
+- [SLSA Specification v1.2](https://slsa.dev/spec/v1.2/) — **Specification · v1.2.** Supply-chain requirements and build provenance for assessing runtimes, tools, and packages.
+- [Sigstore Cosign](https://github.com/sigstore/cosign) — **Tool.** Signs and verifies containers, binaries, and other artifacts used by agent tooling and deployments.
+
+## Monitoring, audit and incident response
+
+- [OpenTelemetry GenAI Semantic Conventions](https://github.com/open-telemetry/semantic-conventions-genai) — **Specification.** GenAI and MCP spans, metrics, and events; verify field stability for the version adopted.
+- [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) — **Tool.** Receives, processes, and exports telemetry for agent traces and tool execution records.
+- [Falco](https://github.com/falcosecurity/falco) — **Tool.** Detects host and container runtime events relevant to the system behavior of agent execution environments.
+- [OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html) — **Guidance.** Security event logging, sensitive-field handling, and log protection for tool-call audit trails.
+- [NIST SP 800-61 Revision 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **Guidance · Rev. 3.** Integrates incident response with risk management, supporting detection, response, and recovery planning.
+
+## Red teaming and guardrails
 
 These tools serve different layers. A scanner, classifier, policy framework, and sandbox are not interchangeable security controls.
 
 - [garak](https://github.com/NVIDIA/garak) — **Tool.** LLM vulnerability scanner with probes and detectors. [Framework paper](https://arxiv.org/abs/2406.11036).
-- [PyRIT](https://github.com/Azure/PyRIT) — **Tool.** Framework for orchestrating generative AI risk identification and red teaming. [Framework paper](https://arxiv.org/abs/2410.02828).
+- [PyRIT](https://github.com/microsoft/PyRIT) — **Tool.** Framework for orchestrating generative AI risk identification and red teaming. [Framework paper](https://arxiv.org/abs/2410.02828).
 - [promptfoo](https://github.com/promptfoo/promptfoo) — **Tool.** Evaluation and red teaming workflows for prompts, agents, and RAG applications.
 - [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) — **Tool.** Programmable guardrails for LLM-based applications.
 - [Purple Llama](https://github.com/meta-llama/PurpleLlama) — **Tool collection.** Safety and security evaluation resources and safeguards from Meta.
 - [Prompt Guard 86M](https://huggingface.co/meta-llama/Prompt-Guard-86M) — **Model.** Classifies benign input, prompt injection, and jailbreak attempts; a detector rather than an authorization boundary.
-- [gVisor](https://gvisor.dev/) — **Runtime.** Application kernel for isolating containerized workloads.
-- [Firecracker](https://firecracker-microvm.github.io/) — **Runtime.** MicroVM technology for workload isolation.
-- [NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) — **Runtime.** Agent execution environment with filesystem, network, and policy controls.
 
 ## Vulnerability disclosures and case studies
 
@@ -218,6 +257,12 @@ These resources explain model behavior, fine-tuning, and supply-chain risks. Ref
 - [New prompt injection papers: Agents Rule of Two and The Attacker Moves Second](https://simonwillison.net/2025/Nov/2/new-prompt-injection-papers/) — **Research commentary · 2025.** Pairs deployment constraints with adaptive evaluation.
 - [Simon Willison's prompt injection archive](https://simonwillison.net/tags/prompt-injection/) — **Ongoing coverage.** A discovery feed for research, incidents, and engineering discussions.
 - [Embrace The Red](https://embracethered.com/blog/) — **Research blog.** First-hand security investigations of assistants, memory, tools, and computer use.
+
+## Maintenance and metadata
+
+The [status table](RESOURCE_STATUS.md) records publication status, tool releases, model revisions, specification versions, and check dates. Full records and evidence URLs are in [resources.json](resources.json). Inclusion indicates topical relevance rather than endorsement or a security guarantee.
+
+GitHub Actions checks bilingual resource parity, metadata, and local links. Pushes, manual runs, and a weekly Monday schedule also produce an external-link report. HTTP 403, 429, and timeouts remain unresolved; metadata older than 90 days prompts review. Checks do not silently rewrite publication or maintenance status.
 
 ## Contributing
 

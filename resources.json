@@ -1,0 +1,1582 @@
+{
+  "schema_version": 1,
+  "resources": [
+    {
+      "title": "Ignore Previous Prompt: Attack Techniques For Language Models",
+      "url": "https://arxiv.org/abs/2211.09527",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2211.09527"
+      ],
+      "arxiv_id": "2211.09527",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+      "url": "https://arxiv.org/abs/2302.12173",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2302.12173"
+      ],
+      "arxiv_id": "2302.12173",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Prompt Injection attack against LLM-integrated Applications",
+      "url": "https://arxiv.org/abs/2306.05499",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2306.05499"
+      ],
+      "arxiv_id": "2306.05499",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Formalizing and Benchmarking Prompt Injection Attacks and Defenses",
+      "url": "https://arxiv.org/abs/2310.12815",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2310.12815",
+        "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-yupei"
+      ],
+      "arxiv_id": "2310.12815",
+      "publication_status": "published",
+      "venue": "USENIX Security 2024",
+      "publication_url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-yupei",
+      "evidence_access": "publisher_index"
+    },
+    {
+      "title": "Prompt injection attacks against GPT-3",
+      "url": "https://simonwillison.net/2022/Sep/12/prompt-injection/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/2022/Sep/12/prompt-injection/"
+      ]
+    },
+    {
+      "title": "OWASP Top 10 for LLM Applications",
+      "url": "https://genai.owasp.org/llm-top-10/",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://genai.owasp.org/llm-top-10/"
+      ],
+      "version": "Living edition index; edition not pinned"
+    },
+    {
+      "title": "OWASP Top 10 for Agentic Applications 2026",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/"
+      ],
+      "version": "2026 edition"
+    },
+    {
+      "title": "OWASP Agentic AI: Threats and Mitigations",
+      "url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/"
+      ]
+    },
+    {
+      "title": "MITRE ATLAS",
+      "url": "https://atlas.mitre.org/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://atlas.mitre.org/"
+      ]
+    },
+    {
+      "title": "NIST AI Risk Management Framework 1.0",
+      "url": "https://doi.org/10.6028/NIST.AI.100-1",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://doi.org/10.6028/NIST.AI.100-1"
+      ],
+      "version": "AI RMF 1.0 / AI 100-1 (2023)"
+    },
+    {
+      "title": "NIST Generative AI Profile",
+      "url": "https://doi.org/10.6028/NIST.AI.600-1",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://doi.org/10.6028/NIST.AI.600-1"
+      ],
+      "version": "AI 600-1 (2024)"
+    },
+    {
+      "title": "Agents Rule of Two",
+      "url": "https://ai.meta.com/blog/practical-ai-agent-security/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://ai.meta.com/blog/practical-ai-agent-security/"
+      ]
+    },
+    {
+      "title": "InjecAgent",
+      "url": "https://arxiv.org/abs/2403.02691",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2403.02691",
+        "https://aclanthology.org/2024.findings-acl.624/"
+      ],
+      "arxiv_id": "2403.02691",
+      "publication_status": "published",
+      "venue": "Findings of ACL 2024",
+      "publication_url": "https://aclanthology.org/2024.findings-acl.624/",
+      "evidence_access": "publisher_page"
+    },
+    {
+      "title": "AgentDojo",
+      "url": "https://arxiv.org/abs/2406.13352",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2406.13352",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html"
+      ],
+      "arxiv_id": "2406.13352",
+      "publication_status": "published",
+      "venue": "NeurIPS 2024 Datasets and Benchmarks",
+      "publication_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html",
+      "evidence_access": "publisher_index"
+    },
+    {
+      "title": "Agent Security Bench",
+      "url": "https://arxiv.org/abs/2410.02644",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2410.02644"
+      ],
+      "arxiv_id": "2410.02644",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "ToolEmu",
+      "url": "https://arxiv.org/abs/2309.15817",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2309.15817"
+      ],
+      "arxiv_id": "2309.15817",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "R-Judge",
+      "url": "https://arxiv.org/abs/2401.10019",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2401.10019"
+      ],
+      "arxiv_id": "2401.10019",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "AgentHarm",
+      "url": "https://arxiv.org/abs/2410.09024",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2410.09024"
+      ],
+      "arxiv_id": "2410.09024",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "WASP",
+      "url": "https://arxiv.org/abs/2504.18575",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2504.18575"
+      ],
+      "arxiv_id": "2504.18575",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "BIPIA",
+      "url": "https://arxiv.org/abs/2312.14197",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2312.14197"
+      ],
+      "arxiv_id": "2312.14197",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "MCPTox",
+      "url": "https://arxiv.org/abs/2508.14925",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2508.14925"
+      ],
+      "arxiv_id": "2508.14925",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Automatic and Universal Prompt Injection Attacks against Large Language Models",
+      "url": "https://arxiv.org/abs/2403.04957",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2403.04957"
+      ],
+      "arxiv_id": "2403.04957",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents",
+      "url": "https://arxiv.org/abs/2503.00061",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2503.00061",
+        "https://aclanthology.org/2025.findings-naacl.395/"
+      ],
+      "arxiv_id": "2503.00061",
+      "publication_status": "published",
+      "venue": "Findings of NAACL 2025",
+      "publication_url": "https://aclanthology.org/2025.findings-naacl.395/",
+      "evidence_access": "publisher_page"
+    },
+    {
+      "title": "The Attacker Moves Second",
+      "url": "https://arxiv.org/abs/2510.09023",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2510.09023"
+      ],
+      "arxiv_id": "2510.09023",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "EIA: Environmental Injection Attack on Generalist Web Agents for Privacy Leakage",
+      "url": "https://arxiv.org/abs/2409.11295",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2409.11295"
+      ],
+      "arxiv_id": "2409.11295",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Attacking Vision-Language Computer Agents via Pop-ups",
+      "url": "https://arxiv.org/abs/2411.02391",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2411.02391"
+      ],
+      "arxiv_id": "2411.02391",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Commercial LLM Agents Are Already Vulnerable to Simple Yet Dangerous Attacks",
+      "url": "https://arxiv.org/abs/2502.08586",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2502.08586"
+      ],
+      "arxiv_id": "2502.08586",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Why Are Web AI Agents More Vulnerable Than Standalone LLMs?",
+      "url": "https://arxiv.org/abs/2502.20383",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2502.20383"
+      ],
+      "arxiv_id": "2502.20383",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Simple Prompt Injection Attacks Can Leak Personal Data Observed by LLM Agents During Task Execution",
+      "url": "https://arxiv.org/abs/2506.01055",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2506.01055"
+      ],
+      "arxiv_id": "2506.01055",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Dissecting Adversarial Robustness of Multimodal LM Agents",
+      "url": "https://arxiv.org/abs/2406.12814",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2406.12814"
+      ],
+      "arxiv_id": "2406.12814",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "AgentPoison",
+      "url": "https://arxiv.org/abs/2407.12784",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2407.12784",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb113910e9c3f6242541c1652e30dfd6-Abstract-Conference.html"
+      ],
+      "arxiv_id": "2407.12784",
+      "publication_status": "published",
+      "venue": "NeurIPS 2024",
+      "publication_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb113910e9c3f6242541c1652e30dfd6-Abstract-Conference.html",
+      "evidence_access": "publisher_index"
+    },
+    {
+      "title": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2410.07283",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2410.07283"
+      ],
+      "arxiv_id": "2410.07283",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Agent Smith",
+      "url": "https://arxiv.org/abs/2402.08567",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2402.08567"
+      ],
+      "arxiv_id": "2402.08567",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Here Comes The AI Worm",
+      "url": "https://arxiv.org/abs/2403.02817",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2403.02817"
+      ],
+      "arxiv_id": "2403.02817",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "CaMeL: Defeating Prompt Injections by Design",
+      "url": "https://arxiv.org/abs/2503.18813",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2503.18813"
+      ],
+      "arxiv_id": "2503.18813",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Design Patterns for Securing LLM Agents against Prompt Injections",
+      "url": "https://arxiv.org/abs/2506.08837",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2506.08837"
+      ],
+      "arxiv_id": "2506.08837",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Fides: Securing AI Agents with Information-Flow Control",
+      "url": "https://arxiv.org/abs/2505.23643",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2505.23643"
+      ],
+      "arxiv_id": "2505.23643",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Progent: Securing AI Agents with Privilege Control",
+      "url": "https://arxiv.org/abs/2504.11703",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2504.11703"
+      ],
+      "arxiv_id": "2504.11703",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "The Dual LLM pattern",
+      "url": "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/"
+      ]
+    },
+    {
+      "title": "The lethal trifecta for AI agents",
+      "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/"
+      ]
+    },
+    {
+      "title": "Spotlighting",
+      "url": "https://arxiv.org/abs/2403.14720",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2403.14720"
+      ],
+      "arxiv_id": "2403.14720",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "StruQ",
+      "url": "https://arxiv.org/abs/2402.06363",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2402.06363",
+        "https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe"
+      ],
+      "arxiv_id": "2402.06363",
+      "publication_status": "published",
+      "venue": "USENIX Security 2025",
+      "publication_url": "https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe",
+      "evidence_access": "publisher_index"
+    },
+    {
+      "title": "SecAlign",
+      "url": "https://arxiv.org/abs/2410.05451",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2410.05451"
+      ],
+      "arxiv_id": "2410.05451",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "The Instruction Hierarchy",
+      "url": "https://arxiv.org/abs/2404.13208",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2404.13208"
+      ],
+      "arxiv_id": "2404.13208",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Jatmo",
+      "url": "https://arxiv.org/abs/2312.17673",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2312.17673"
+      ],
+      "arxiv_id": "2312.17673",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "MELON",
+      "url": "https://arxiv.org/abs/2502.05174",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2502.05174",
+        "https://proceedings.mlr.press/v267/zhu25z.html"
+      ],
+      "arxiv_id": "2502.05174",
+      "publication_status": "published",
+      "venue": "ICML 2025 / PMLR 267",
+      "publication_url": "https://proceedings.mlr.press/v267/zhu25z.html",
+      "evidence_access": "publisher_page"
+    },
+    {
+      "title": "MCP Authorization, specification 2025-06-18",
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization"
+      ],
+      "version": "2025-06-18"
+    },
+    {
+      "title": "MCP Security Best Practices",
+      "url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices"
+      ],
+      "version": "2026-07-28"
+    },
+    {
+      "title": "Model Context Protocol: Landscape, Security Threats, and Future Research Directions",
+      "url": "https://arxiv.org/abs/2503.23278",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2503.23278"
+      ],
+      "arxiv_id": "2503.23278",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "MCP Safety Audit",
+      "url": "https://arxiv.org/abs/2504.03767",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2504.03767"
+      ],
+      "arxiv_id": "2504.03767",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "MCP Security Notification: Tool Poisoning Attacks",
+      "url": "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks"
+      ]
+    },
+    {
+      "title": "Jumping the line: How MCP servers can attack you before you ever use them",
+      "url": "https://blog.trailofbits.com/2025/04/21/jumping-the-line-how-mcp-servers-can-attack-you-before-you-ever-use-them/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://blog.trailofbits.com/2025/04/21/jumping-the-line-how-mcp-servers-can-attack-you-before-you-ever-use-them/"
+      ]
+    },
+    {
+      "title": "OAuth 2.0 Security Best Current Practice — RFC 9700",
+      "url": "https://www.rfc-editor.org/rfc/rfc9700",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://www.rfc-editor.org/rfc/rfc9700"
+      ],
+      "version": "RFC 9700 / BCP 240 (2025)"
+    },
+    {
+      "title": "Resource Indicators for OAuth 2.0 — RFC 8707",
+      "url": "https://www.rfc-editor.org/rfc/rfc8707",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://www.rfc-editor.org/rfc/rfc8707"
+      ],
+      "version": "RFC 8707 (2020)"
+    },
+    {
+      "title": "OAuth 2.0 Token Exchange — RFC 8693",
+      "url": "https://www.rfc-editor.org/rfc/rfc8693",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://www.rfc-editor.org/rfc/rfc8693"
+      ],
+      "version": "RFC 8693 (2020)"
+    },
+    {
+      "title": "SPIFFE",
+      "url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://spiffe.io/docs/latest/spiffe-about/overview/"
+      ],
+      "version": "Living specification overview"
+    },
+    {
+      "title": "SPIRE",
+      "url": "https://github.com/spiffe/spire",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/spiffe/spire",
+        "https://api.github.com/repos/spiffe/spire",
+        "https://api.github.com/repos/spiffe/spire/releases/latest"
+      ],
+      "repository": "spiffe/spire",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-06T13:03:37Z",
+      "latest_release": "v1.16.0",
+      "release_date": "2026-11-05T18:37:05Z",
+      "release_url": "https://github.com/spiffe/spire/releases/tag/v1.16.0"
+    },
+    {
+      "title": "OpenFGA",
+      "url": "https://github.com/openfga/openfga",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/openfga/openfga",
+        "https://api.github.com/repos/openfga/openfga",
+        "https://api.github.com/repos/openfga/openfga/releases/latest"
+      ],
+      "repository": "openfga/openfga",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-07T16:43:41Z",
+      "latest_release": "v1.22.1",
+      "release_date": "2026-10-28T13:14:33Z",
+      "release_url": "https://github.com/openfga/openfga/releases/tag/v1.22.1"
+    },
+    {
+      "title": "Open Policy Agent",
+      "url": "https://github.com/open-policy-agent/opa",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/open-policy-agent/opa",
+        "https://api.github.com/repos/open-policy-agent/opa",
+        "https://api.github.com/repos/open-policy-agent/opa/releases/latest"
+      ],
+      "repository": "open-policy-agent/opa",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-08T03:45:08Z",
+      "latest_release": "v1.22.2",
+      "release_date": "2026-11-06T00:02:09Z",
+      "release_url": "https://github.com/open-policy-agent/opa/releases/tag/v1.22.2"
+    },
+    {
+      "title": "OWASP Secrets Management Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+      ]
+    },
+    {
+      "title": "OpenBao",
+      "url": "https://github.com/openbao/openbao",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/openbao/openbao",
+        "https://api.github.com/repos/openbao/openbao",
+        "https://api.github.com/repos/openbao/openbao/releases/latest"
+      ],
+      "repository": "openbao/openbao",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-06T16:46:23Z",
+      "latest_release": "v2.7.2",
+      "release_date": "2026-10-26T20:24:37Z",
+      "release_url": "https://github.com/openbao/openbao/releases/tag/v2.7.2"
+    },
+    {
+      "title": "Gitleaks",
+      "url": "https://github.com/gitleaks/gitleaks",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/gitleaks/gitleaks",
+        "https://api.github.com/repos/gitleaks/gitleaks",
+        "https://api.github.com/repos/gitleaks/gitleaks/releases/latest"
+      ],
+      "repository": "gitleaks/gitleaks",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-10-28T04:14:29Z",
+      "latest_release": "v8.30.1",
+      "release_date": "2026-03-21T02:17:58Z",
+      "release_url": "https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1"
+    },
+    {
+      "title": "TruffleHog",
+      "url": "https://github.com/trufflesecurity/trufflehog",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/trufflesecurity/trufflehog",
+        "https://api.github.com/repos/trufflesecurity/trufflehog",
+        "https://api.github.com/repos/trufflesecurity/trufflehog/releases/latest"
+      ],
+      "repository": "trufflesecurity/trufflehog",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-05T17:40:43Z",
+      "latest_release": "v3.99.8",
+      "release_date": "2026-11-02T18:38:05Z",
+      "release_url": "https://github.com/trufflesecurity/trufflehog/releases/tag/v3.99.8"
+    },
+    {
+      "title": "gVisor",
+      "url": "https://gvisor.dev/",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/google/gvisor",
+        "https://api.github.com/repos/google/gvisor",
+        "https://api.github.com/repos/google/gvisor/releases/latest"
+      ],
+      "repository": "google/gvisor",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-08T12:30:42Z",
+      "latest_release": "release-20261102.0",
+      "release_date": "2026-11-02T22:00:15Z",
+      "release_url": "https://github.com/google/gvisor/releases/tag/release-20261102.0"
+    },
+    {
+      "title": "Firecracker",
+      "url": "https://firecracker-microvm.github.io/",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/firecracker-microvm/firecracker",
+        "https://api.github.com/repos/firecracker-microvm/firecracker",
+        "https://api.github.com/repos/firecracker-microvm/firecracker/releases/latest"
+      ],
+      "repository": "firecracker-microvm/firecracker",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-06T19:33:38Z",
+      "latest_release": "v1.17.0",
+      "release_date": "2026-09-10T14:19:40Z",
+      "release_url": "https://github.com/firecracker-microvm/firecracker/releases/tag/v1.17.0"
+    },
+    {
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/NVIDIA/OpenShell",
+        "https://api.github.com/repos/NVIDIA/OpenShell",
+        "https://api.github.com/repos/NVIDIA/OpenShell/releases/latest"
+      ],
+      "repository": "NVIDIA/OpenShell",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-07T17:31:00Z",
+      "latest_release": "v0.1.7",
+      "release_date": "2026-11-03T19:24:39Z",
+      "release_url": "https://github.com/NVIDIA/OpenShell/releases/tag/v0.1.7"
+    },
+    {
+      "title": "Pod Security Standards",
+      "url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://kubernetes.io/docs/concepts/security/pod-security-standards/"
+      ],
+      "version": "Rolling documentation; deployment profile version not pinned"
+    },
+    {
+      "title": "SLSA Specification v1.2",
+      "url": "https://slsa.dev/spec/v1.2/",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://slsa.dev/spec/v1.2/"
+      ],
+      "version": "SLSA v1.2 (Approved)"
+    },
+    {
+      "title": "Sigstore Cosign",
+      "url": "https://github.com/sigstore/cosign",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/sigstore/cosign",
+        "https://api.github.com/repos/sigstore/cosign",
+        "https://api.github.com/repos/sigstore/cosign/releases/latest"
+      ],
+      "repository": "sigstore/cosign",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-05T00:11:57Z",
+      "latest_release": "v3.1.4",
+      "release_date": "2026-10-20T18:27:42Z",
+      "release_url": "https://github.com/sigstore/cosign/releases/tag/v3.1.4"
+    },
+    {
+      "title": "OpenTelemetry GenAI Semantic Conventions",
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/open-telemetry/semantic-conventions-genai"
+      ],
+      "version": "Living conventions; verify per-field stability"
+    },
+    {
+      "title": "OpenTelemetry Collector",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/open-telemetry/opentelemetry-collector",
+        "https://api.github.com/repos/open-telemetry/opentelemetry-collector",
+        "https://api.github.com/repos/open-telemetry/opentelemetry-collector/releases/latest"
+      ],
+      "repository": "open-telemetry/opentelemetry-collector",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-07T00:17:40Z",
+      "latest_release": "v0.165.0",
+      "release_date": "2026-11-06T23:42:20Z",
+      "release_url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.165.0"
+    },
+    {
+      "title": "Falco",
+      "url": "https://github.com/falcosecurity/falco",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/falcosecurity/falco",
+        "https://api.github.com/repos/falcosecurity/falco",
+        "https://api.github.com/repos/falcosecurity/falco/releases/latest"
+      ],
+      "repository": "falcosecurity/falco",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-06T12:37:01Z",
+      "latest_release": "0.45.2",
+      "release_date": "2026-10-29T16:48:27Z",
+      "release_url": "https://github.com/falcosecurity/falco/releases/tag/0.45.2"
+    },
+    {
+      "title": "OWASP Logging Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"
+      ]
+    },
+    {
+      "title": "NIST SP 800-61 Revision 3",
+      "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "kind": "specification",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ],
+      "version": "SP 800-61 Rev. 3 (2025)"
+    },
+    {
+      "title": "garak",
+      "url": "https://github.com/NVIDIA/garak",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/NVIDIA/garak",
+        "https://api.github.com/repos/NVIDIA/garak",
+        "https://api.github.com/repos/NVIDIA/garak/releases/latest"
+      ],
+      "repository": "NVIDIA/garak",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-06T23:26:29Z",
+      "latest_release": "v0.17.1",
+      "release_date": "2026-10-16T20:14:17Z",
+      "release_url": "https://github.com/NVIDIA/garak/releases/tag/v0.17.1"
+    },
+    {
+      "title": "garak: A Framework for Security Probing Large Language Models",
+      "url": "https://arxiv.org/abs/2406.11036",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2406.11036"
+      ],
+      "arxiv_id": "2406.11036",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "PyRIT",
+      "url": "https://github.com/microsoft/PyRIT",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/microsoft/PyRIT",
+        "https://api.github.com/repos/microsoft/PyRIT",
+        "https://api.github.com/repos/microsoft/PyRIT/releases/latest",
+        "https://github.com/Azure/PyRIT/blob/main/README.md"
+      ],
+      "repository": "microsoft/PyRIT",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-08T09:23:37Z",
+      "latest_release": "v1.1.0",
+      "release_date": "2026-09-04T22:19:28Z",
+      "release_url": "https://github.com/microsoft/PyRIT/releases/tag/v1.1.0",
+      "previous_urls": [
+        "https://github.com/Azure/PyRIT"
+      ]
+    },
+    {
+      "title": "PyRIT: A Framework for Security Risk Identification and Red Teaming in Generative AI System",
+      "url": "https://arxiv.org/abs/2410.02828",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2410.02828"
+      ],
+      "arxiv_id": "2410.02828",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/promptfoo/promptfoo",
+        "https://api.github.com/repos/promptfoo/promptfoo",
+        "https://api.github.com/repos/promptfoo/promptfoo/releases/latest"
+      ],
+      "repository": "promptfoo/promptfoo",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-08T11:45:08Z",
+      "latest_release": "0.125.1",
+      "release_date": "2026-10-25T01:53:11Z",
+      "release_url": "https://github.com/promptfoo/promptfoo/releases/tag/0.125.1"
+    },
+    {
+      "title": "NeMo Guardrails",
+      "url": "https://github.com/NVIDIA-NeMo/Guardrails",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/NVIDIA-NeMo/Guardrails",
+        "https://api.github.com/repos/NVIDIA-NeMo/Guardrails",
+        "https://api.github.com/repos/NVIDIA-NeMo/Guardrails/releases/latest"
+      ],
+      "repository": "NVIDIA-NeMo/Guardrails",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-11-07T02:47:40Z",
+      "latest_release": "v0.24.1",
+      "release_date": "2026-09-16T17:15:59Z",
+      "release_url": "https://github.com/NVIDIA-NeMo/Guardrails/releases/tag/v0.24.1"
+    },
+    {
+      "title": "Purple Llama",
+      "url": "https://github.com/meta-llama/PurpleLlama",
+      "kind": "tool",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/meta-llama/PurpleLlama",
+        "https://api.github.com/repos/meta-llama/PurpleLlama",
+        "https://api.github.com/repos/meta-llama/PurpleLlama/releases/latest"
+      ],
+      "repository": "meta-llama/PurpleLlama",
+      "maintenance_status": "not_archived",
+      "last_push": "2026-10-30T17:56:26Z",
+      "latest_release": null,
+      "release_date": null,
+      "release_url": null,
+      "release_note": "HTTP Error 404: Not Found"
+    },
+    {
+      "title": "Prompt Guard 86M",
+      "url": "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+      "kind": "model",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+        "https://huggingface.co/api/models/meta-llama/Prompt-Guard-86M"
+      ],
+      "revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+      "last_modified": "2025-11-12T21:27:00.000Z"
+    },
+    {
+      "title": "Google Bard: From Prompt Injection to Data Exfiltration",
+      "url": "https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/"
+      ]
+    },
+    {
+      "title": "Microsoft Copilot: Prompt Injection and ASCII Smuggling",
+      "url": "https://embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/"
+      ]
+    },
+    {
+      "title": "SpAIware: ChatGPT Long-Term Memory",
+      "url": "https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/"
+      ]
+    },
+    {
+      "title": "Data Exfiltration from Slack AI",
+      "url": "https://promptarmor.substack.com/p/data-exfiltration-from-slack-ai-via",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://promptarmor.substack.com/p/data-exfiltration-from-slack-ai-via"
+      ]
+    },
+    {
+      "title": "EchoLeak / CVE-2025-32711",
+      "url": "https://cveawg.mitre.org/api/cve/CVE-2025-32711",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://cveawg.mitre.org/api/cve/CVE-2025-32711"
+      ]
+    },
+    {
+      "title": "WhatsApp MCP Exploited",
+      "url": "https://invariantlabs.ai/blog/whatsapp-mcp-exploited",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://invariantlabs.ai/blog/whatsapp-mcp-exploited"
+      ]
+    },
+    {
+      "title": "GitHub MCP Exploited",
+      "url": "https://invariantlabs.ai/blog/mcp-github-vulnerability",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://invariantlabs.ai/blog/mcp-github-vulnerability"
+      ]
+    },
+    {
+      "title": "Supabase MCP: Prompt Injection and Private Tables",
+      "url": "https://generalanalysis.com/blog/supabase-mcp-blog",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://generalanalysis.com/blog/supabase-mcp-blog"
+      ]
+    },
+    {
+      "title": "mcp-remote / CVE-2025-6514",
+      "url": "https://jfrog.com/blog/2025-6514-critical-mcp-remote-rce-vulnerability/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://jfrog.com/blog/2025-6514-critical-mcp-remote-rce-vulnerability/"
+      ]
+    },
+    {
+      "title": "Cursor CurXecute / CVE-2025-54135",
+      "url": "https://github.com/cursor/cursor/security/advisories/GHSA-4cxx-hrm3-49rm",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://github.com/cursor/cursor/security/advisories/GHSA-4cxx-hrm3-49rm"
+      ]
+    },
+    {
+      "title": "GitHub Copilot / CVE-2025-53773",
+      "url": "https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/"
+      ]
+    },
+    {
+      "title": "CamoLeak",
+      "url": "https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code"
+      ]
+    },
+    {
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/"
+      ]
+    },
+    {
+      "title": "ZombAIs: Prompt Injection to C2 with Claude Computer Use",
+      "url": "https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/"
+      ]
+    },
+    {
+      "title": "Indirect Prompt Injection in Perplexity Comet",
+      "url": "https://brave.com/blog/comet-prompt-injection/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://brave.com/blog/comet-prompt-injection/"
+      ]
+    },
+    {
+      "title": "Google Antigravity Exfiltrates Data",
+      "url": "https://www.promptarmor.com/resources/google-antigravity-exfiltrates-data",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://www.promptarmor.com/resources/google-antigravity-exfiltrates-data"
+      ]
+    },
+    {
+      "title": "Lessons from Defending Gemini Against Indirect Prompt Injections",
+      "url": "https://arxiv.org/abs/2505.14534",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2505.14534"
+      ],
+      "arxiv_id": "2505.14534",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Making Claude Code Safer with Sandboxing",
+      "url": "https://www.anthropic.com/research/claude-code-sandboxing",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://www.anthropic.com/research/claude-code-sandboxing"
+      ]
+    },
+    {
+      "title": "Mitigating Prompt Injections in Browser Use",
+      "url": "https://www.anthropic.com/research/prompt-injection-defenses",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://www.anthropic.com/research/prompt-injection-defenses"
+      ]
+    },
+    {
+      "title": "Agentic Misalignment: LLMs as Insider Threats",
+      "url": "https://www.anthropic.com/research/agentic-misalignment",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://www.anthropic.com/research/agentic-misalignment"
+      ]
+    },
+    {
+      "title": "An Agent Used DNS to Reach an External Chatbot",
+      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/"
+      ]
+    },
+    {
+      "title": "Practical LLM Security Advice from the NVIDIA AI Red Team",
+      "url": "https://developer.nvidia.com/blog/practical-llm-security-advice-from-the-nvidia-ai-red-team/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://developer.nvidia.com/blog/practical-llm-security-advice-from-the-nvidia-ai-red-team/"
+      ]
+    },
+    {
+      "title": "Jailbroken: How Does LLM Safety Training Fail?",
+      "url": "https://arxiv.org/abs/2307.02483",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2307.02483"
+      ],
+      "arxiv_id": "2307.02483",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+      "url": "https://arxiv.org/abs/2307.15043",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2307.15043"
+      ],
+      "arxiv_id": "2307.15043",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Refusal in Language Models Is Mediated by a Single Direction",
+      "url": "https://arxiv.org/abs/2406.11717",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2406.11717",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/f545448535dfde4f9786555403ab7c49-Abstract-Conference.html"
+      ],
+      "arxiv_id": "2406.11717",
+      "publication_status": "published",
+      "venue": "NeurIPS 2024",
+      "publication_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/f545448535dfde4f9786555403ab7c49-Abstract-Conference.html",
+      "evidence_access": "publisher_page"
+    },
+    {
+      "title": "Shadow Alignment",
+      "url": "https://arxiv.org/abs/2310.02949",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2310.02949"
+      ],
+      "arxiv_id": "2310.02949",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+      "url": "https://arxiv.org/abs/2310.03693",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2310.03693"
+      ],
+      "arxiv_id": "2310.03693",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "BadLlama",
+      "url": "https://arxiv.org/abs/2311.00117",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2311.00117"
+      ],
+      "arxiv_id": "2311.00117",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Sleeper Agents",
+      "url": "https://arxiv.org/abs/2401.05566",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2401.05566"
+      ],
+      "arxiv_id": "2401.05566",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Emergent Misalignment",
+      "url": "https://arxiv.org/abs/2502.17424",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2502.17424"
+      ],
+      "arxiv_id": "2502.17424",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Poisoning Web-Scale Training Datasets is Practical",
+      "url": "https://arxiv.org/abs/2302.10149",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2302.10149"
+      ],
+      "arxiv_id": "2302.10149",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Scaling Trends for Data Poisoning in LLMs",
+      "url": "https://arxiv.org/abs/2408.02946",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2408.02946"
+      ],
+      "arxiv_id": "2408.02946",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Llama Guard",
+      "url": "https://arxiv.org/abs/2312.06674",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2312.06674"
+      ],
+      "arxiv_id": "2312.06674",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Uncensor any LLM with abliteration",
+      "url": "https://huggingface.co/blog/mlabonne/abliteration",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://huggingface.co/blog/mlabonne/abliteration"
+      ]
+    },
+    {
+      "title": "Prismata: Confining Cross-Site Prompt Injection in Web Agents",
+      "url": "https://arxiv.org/abs/2607.08147",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.08147"
+      ],
+      "arxiv_id": "2607.08147",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files",
+      "url": "https://arxiv.org/abs/2610.09264",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.09264"
+      ],
+      "arxiv_id": "2610.09264",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Names Are Not Objects: Object-Bound Confinement for Compromised AI Coding Agents",
+      "url": "https://arxiv.org/abs/2610.14488",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.14488"
+      ],
+      "arxiv_id": "2610.14488",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "The Agent Knew",
+      "url": "https://arxiv.org/abs/2610.17301",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.17301"
+      ],
+      "arxiv_id": "2610.17301",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Kairos: Transactional Security Enforcement at the System Boundary for LLM Agents",
+      "url": "https://arxiv.org/abs/2610.18457",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.18457"
+      ],
+      "arxiv_id": "2610.18457",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Towards Safe Autonomy for Computer Use",
+      "url": "https://arxiv.org/abs/2610.18508",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.18508"
+      ],
+      "arxiv_id": "2610.18508",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Structured Authority Injection",
+      "url": "https://arxiv.org/abs/2610.22373",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.22373"
+      ],
+      "arxiv_id": "2610.22373",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "The Model Knows Better: Defending Medical Multi-Agent Systems Against Prompt Injection",
+      "url": "https://arxiv.org/abs/2610.22594",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.22594"
+      ],
+      "arxiv_id": "2610.22594",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "From Approval to Abuse",
+      "url": "https://arxiv.org/abs/2610.22987",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.22987"
+      ],
+      "arxiv_id": "2610.22987",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Cryptographically Secure Agent-to-Agent Communication in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.23078",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.23078"
+      ],
+      "arxiv_id": "2610.23078",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Ignored, Not Refused",
+      "url": "https://arxiv.org/abs/2610.23254",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.23254"
+      ],
+      "arxiv_id": "2610.23254",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "SPIDES: Information-Flow Control for Browser Agents",
+      "url": "https://arxiv.org/abs/2610.24277",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.24277"
+      ],
+      "arxiv_id": "2610.24277",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "RATION: Towards Quantitative Risk-Based Access Control for AI Agents",
+      "url": "https://arxiv.org/abs/2610.24311",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.24311"
+      ],
+      "arxiv_id": "2610.24311",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "SoK: PIAtlas",
+      "url": "https://arxiv.org/abs/2610.24999",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.24999"
+      ],
+      "arxiv_id": "2610.24999",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "After the Attacker Leaves",
+      "url": "https://arxiv.org/abs/2610.28425",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.28425"
+      ],
+      "arxiv_id": "2610.28425",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Agentic AI Defense: Decode-Time Provenance Binding for MCP",
+      "url": "https://arxiv.org/abs/2610.31974",
+      "kind": "paper",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.31974"
+      ],
+      "arxiv_id": "2610.31974",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Prompt injection: What's the worst that can happen?",
+      "url": "https://simonwillison.net/2023/Apr/14/worst-that-can-happen/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/2023/Apr/14/worst-that-can-happen/"
+      ]
+    },
+    {
+      "title": "Model Context Protocol has prompt injection security problems",
+      "url": "https://simonwillison.net/2025/Apr/9/mcp-prompt-injection/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/2025/Apr/9/mcp-prompt-injection/"
+      ]
+    },
+    {
+      "title": "CaMeL offers a promising new direction",
+      "url": "https://simonwillison.net/2025/Apr/11/camel/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/2025/Apr/11/camel/"
+      ]
+    },
+    {
+      "title": "Design patterns for securing LLM agents",
+      "url": "https://simonwillison.net/2025/Jun/13/prompt-injection-design-patterns/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/2025/Jun/13/prompt-injection-design-patterns/"
+      ]
+    },
+    {
+      "title": "New prompt injection papers: Agents Rule of Two and The Attacker Moves Second",
+      "url": "https://simonwillison.net/2025/Nov/2/new-prompt-injection-papers/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/2025/Nov/2/new-prompt-injection-papers/"
+      ]
+    },
+    {
+      "title": "Simon Willison's prompt injection archive",
+      "url": "https://simonwillison.net/tags/prompt-injection/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://simonwillison.net/tags/prompt-injection/"
+      ]
+    },
+    {
+      "title": "Embrace The Red",
+      "url": "https://embracethered.com/blog/",
+      "kind": "reference",
+      "checked_on": "2026-11-08",
+      "evidence_urls": [
+        "https://embracethered.com/blog/"
+      ]
+    }
+  ]
+}
