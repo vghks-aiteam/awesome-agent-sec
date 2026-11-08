@@ -1,6 +1,6 @@
 # Curation and source notes
 
-[Back to the catalog](../README.md) · [繁體中文導讀](../README.zh-TW.md)
+[繁體中文目錄](../README.md) · [English catalog](../README.en.md) · [繁體中文導讀](../README.zh-TW.md)
 
 ## Scope and provenance
 
@@ -8,7 +8,7 @@ The initial catalog was curated from the supplied AgentSec research notes: princ
 
 The snapshot contained **152 distinct external URLs**: 68 arXiv pages, 20 Hacker News threads, and 64 other references. These are counts of source URLs, not the number of independent studies or catalog entries. The arXiv references include the Gemini engineering paper outside the original numbered paper list.
 
-The catalog was rewritten as original English annotations, with a Traditional Chinese reading guide. It links third-party material rather than redistributing full papers, copied abstracts, the generated website, or its bundled assets.
+The catalog provides original Traditional Chinese annotations in README.md, a complete English version in README.en.md, and an additional Traditional Chinese reading guide. The two catalog versions preserve the same resources and original titles. The repository links third-party material rather than redistributing full papers, copied abstracts, the generated website, or its bundled assets.
 
 ## Verification performed on 2026-11-08
 
