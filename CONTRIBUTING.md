@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions that help readers understand or secure AI agents are welcome. English is used for the main catalog; Traditional Chinese improvements belong in the reading guide.
+Contributions that help readers understand or secure AI agents are welcome. Traditional Chinese is used for the main catalog in README.md, with a complete English version in README.en.md and an additional Traditional Chinese reading guide. Keep resource titles and technical terms in their original language, and update both catalog versions when adding or changing an entry.
 
 ## What belongs here
 
@@ -35,7 +35,7 @@ New preprints with unverified publication status belong in the research watchlis
 - Check spelling, section placement, and GitHub Markdown rendering.
 - Verify relative links and heading anchors after renaming or moving content.
 - Open external links and check that the destination is the intended resource; a successful HTTP response alone is insufficient.
-- Keep the Chinese guide's navigation consistent when changing the catalog structure.
+- Keep navigation consistent across both catalog versions and the Chinese guide when changing the catalog structure.
 - Describe blocked or unavailable sources explicitly instead of marking them verified.
 
 This is a documentation repository and has no application build or runtime test suite. Content review and link verification are the relevant checks.

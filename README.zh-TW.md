@@ -1,17 +1,17 @@
 # Awesome Agent Security：繁體中文導讀
 
-這是一份以 AI agent 系統安全為主題的資源清單，涵蓋 prompt injection、MCP、工具權限、長期記憶、multi-agent、sandbox 與評測。完整資源與 English 摘要見 [English README](README.md)。
+這是一份以 AI agent 系統安全為主題的資源清單，涵蓋 prompt injection、MCP、工具權限、長期記憶、multi-agent、sandbox 與評測。完整資源與繁體中文摘要見[主目錄](README.md)，也可切換至 [English 版](README.en.md)。
 
-本導讀提供閱讀路徑與判讀方式，資源目錄以 English README 為準。
+本導讀提供閱讀路徑與判讀方式，資源目錄以繁體中文首頁為主，並提供完整 English 版。
 
 ## 從哪裡開始
 
 | 你的目標 | 建議閱讀順序 |
 | --- | --- |
-| 第一次接觸 agent security | Foundations → Threat models and standards → Vulnerability disclosures and case studies。 |
-| 正在開發能讀私有資料、呼叫工具的 agent | System and architectural defenses → MCP security → Red teaming and runtime tools。 |
-| 想評估模型或防禦方法 | Benchmarks and evaluation → Prompt injection and agent attacks → 同時檢查正常任務完成率。 |
-| 想找研究題目 | Memory and multi-agent security → 2026 research watchlist。 |
+| 第一次接觸 agent security | 基礎概念 → 威脅模型與標準 → 漏洞揭露與案例研究。 |
+| 正在開發能讀私有資料、呼叫工具的 agent | 系統與架構層防禦 → MCP 安全 → 紅隊與執行環境工具。 |
+| 想評估模型或防禦方法 | Benchmark 與評測 → Prompt injection 與 agent 攻擊 → 同時檢查正常任務完成率。 |
+| 想找研究題目 | 記憶與 multi-agent 安全 → 2026 年研究追蹤。 |
 
 ## 建議先讀的六份材料
 
@@ -44,7 +44,7 @@
 - 寫入、寄信與其他敏感動作是否有清楚的授權條件。
 - Audit log 能否重建資料來源、工具呼叫與實際結果。
 
-這些問題可搭配 [architectural defenses](README.md#system-and-architectural-defenses)、[MCP security](README.md#mcp-security) 與 [runtime tools](README.md#red-teaming-and-runtime-tools) 閱讀。這是一個示意 threat model，不代表任何單一產品已具備完整防護。
+這些問題可搭配[系統與架構層防禦](README.md#系統與架構層防禦)、[MCP 安全](README.md#mcp-安全)與[紅隊與執行環境工具](README.md#紅隊與執行環境工具)閱讀。這是一個示意 threat model，不代表任何單一產品已具備完整防護。
 
 ## 醫療與高敏感資料場景
 
