@@ -1,0 +1,46 @@
+name: Catalog quality
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Unit and end-to-end checks
+        run: python3 -m unittest -v
+      - name: Bilingual catalog, metadata and local links
+        run: python3 check_catalog.py
+
+  external-links:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - name: External link report
+        id: lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+        with:
+          lycheeVersion: v0.24.2
+          args: --config lychee.toml --no-progress README.md README.en.md README.zh-TW.md RESOURCE_STATUS.md resources.json docs/curation.md
+          fail: false
+          failIfEmpty: true
+          format: markdown
+          output: link-report.md
+          jobSummary: true
+      - name: Flag unresolved links for review
+        if: steps.lychee.outputs.exit_code != '0'
+        run: echo '::warning::Some external links could not be verified. Review the link report in the job summary; 403 and 429 are not accepted as valid.'
