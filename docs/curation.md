@@ -47,6 +47,14 @@ All 2026 watchlist items are linked as arXiv preprints with publication status l
 
 ## Maintenance policy
 
-Prefer a smaller number of useful, verifiable resources over repeated links or unsupported claims. Add new sections only when existing categories cannot accommodate a distinct topic. Fix changed destinations, remove duplicates, and preserve meaningful caveats when editing descriptions.
+Collect broadly relevant, verifiable agent-security resources without requiring a personal recommendation or endorsement. Keep research, implementations, historical disclosures, and general-purpose infrastructure distinguishable. Fix changed destinations, remove duplicates, and preserve meaningful caveats when editing descriptions.
 
-Link verification is a point-in-time check. No automated recurring link-check workflow is configured in the initial version.
+The coverage update adds 19 resources on identity, authorization, secrets, runtime and supply-chain security, monitoring, audit, and incident response. The catalogs now contain 137 entries; resources.json records 139 source URLs, including two additional framework papers linked within tool entries.
+
+The [status table](../RESOURCE_STATUS.md) records publication evidence, archive flags, release snapshots, model revisions, specification versions, and check dates. Eight paper records were matched to official publication pages or official publisher search indexes. The remaining 60 arXiv records explicitly leave formal publication status unverified. Some OpenReview and USENIX pages blocked automated retrieval; absence of verification is not evidence of non-publication.
+
+Repository and release metadata were read from GitHub's public API. The old Azure/PyRIT repository is archived and points to microsoft/PyRIT; both catalogs use the new location. The OpenTelemetry GenAI conventions page has moved to open-telemetry/semantic-conventions-genai. Generic components such as OPA, SPIFFE, Kubernetes, and OpenBao are included for their role in agent infrastructure, without implying they are complete agent-security products.
+
+GitHub Actions now checks bilingual resource parity, metadata coverage, generated status content, and local file/heading links. It also runs the Python unit, CLI-flow, and smoke checks. External links are checked on pushes, manual runs, and a weekly schedule, with an informational report in the job summary. HTTP 403/429 and timeouts remain unresolved instead of being counted as valid links. Metadata older than 90 days prompts a review warning.
+
+Automated checks establish document and link properties, not scientific correctness, translation equivalence, ongoing project maintenance, or the safety of any deployment. Metadata and destination changes still need human review.
