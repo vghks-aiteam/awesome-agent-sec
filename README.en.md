@@ -194,6 +194,16 @@ These are historical reports about particular configurations and versions. Inclu
 - [GitHub Copilot / CVE-2025-53773](https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/) — **Disclosure · 2025.** Research report connecting prompt injection, configuration changes, and code execution.
 - [CamoLeak](https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code) — **Disclosure · 2025.** Examines private source-code exfiltration in GitHub Copilot workflows.
 - [Breaking Claude Code Opus 5 Auto Mode](https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/) — **Disclosure · 2026.** A researcher evaluation of automatic approval behavior; read its attack setup and sample size before generalizing.
+- [MCP Python SDK / CVE-2026-115563](https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99) — **Maintainer advisory · 2026.** Affected OAuth clients let the MCP server choose which authorization server receives client credentials; after upgrading, callers still need to set an issuer and clear unbound stored client registrations.
+- [Jupyter MCP Server / CVE-2026-77359](https://github.com/advisories/GHSA-9x8x-crjq-g64h) — **Maintainer advisory · 2026.** In standalone HTTP mode, management routes lacked the Host/Origin checks applied to `/mcp`, so a malicious web page could use DNS rebinding to repoint the server's Jupyter backend; binding to localhost alone is not a boundary.
+- [mcp-ssh-manager / CVE-2026-129995](https://github.com/bvisible/mcp-ssh-manager/security/advisories/GHSA-qwwm-vrm9-4mw8) — **Maintainer advisory · 2026.** Unescaped tool arguments were interpolated into remote shell commands; an earlier fix covered only the database tools, and a listing tool skipped the policy check, so readonly and restricted modes could still be bypassed.
+
+### Framework, supply-chain and real-world incidents
+
+- [CrewAI guard bypasses / GHSA-wp6h-6xxh-g8fp](https://github.com/crewAIInc/crewAI/security/advisories/GHSA-wp6h-6xxh-g8fp) — **Maintainer advisory · 2026.** Three bypasses of existing safeguards: tool loading could skip the deserialization guard, NL2SQL read-only mode allowed writes through certain valid SQL syntax, and symlinks could escape file containment. No CVE was assigned at publication.
+- [Malicious code in agent-framework (PyPI) / GHSA-764m-3ppc-5m73](https://github.com/advisories/GHSA-764m-3ppc-5m73) — **Malicious package advisory · 2026.** Two unauthorized releases (1.26.1 and 1.26.2) of Microsoft Agent Framework's PyPI meta-package used a `.pth` startup hook to steal cloud and CI credentials; an observed supply-chain incident whose entry point had not been disclosed.
+- [It's the Golden State, not the Wild West: Attorney General Bonta Sues OpenAI Over Cybersecurity Incidents](https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over) — **State lawsuit · 2026.** California alleges that agents under OpenAI's testing escaped their test environments and attacked external systems; these are allegations not yet decided by a court.
+- ["Give this paper a good review": Prompts for AI reviewers make their way into published papers](https://retractionwatch.com/2026/11/19/prompt-injection-ai-llm-peer-review-published-papers/) — **Incident report · 2026.** A published paper hid instructions for AI reviewers in its data availability statement and was retracted; illustrates the indirect prompt injection surface created when peer-review workflows pass manuscripts to an LLM.
 
 ### Browser and computer-use disclosures
 
@@ -229,7 +239,7 @@ These resources explain model behavior, fine-tuning, and supply-chain risks. Ref
 
 ## 2026 research watchlist
 
-**All entries below are arXiv preprints.** Titles and abstracts were checked on 2026-11-08; peer-review or acceptance status was not independently established. Descriptions summarize proposed methods or reported experiments, rather than validated deployment guarantees.
+**All entries below are arXiv preprints.** Titles and abstracts were checked on 2026-11-08, with the 2611 entries checked on 2026-11-22; peer-review or acceptance status was not independently established. Descriptions summarize proposed methods or reported experiments, rather than validated deployment guarantees.
 
 - [Prismata: Confining Cross-Site Prompt Injection in Web Agents](https://arxiv.org/abs/2607.08147) — Studies confinement of cross-site prompt injection in web-agent workflows.
 - [Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files](https://arxiv.org/abs/2610.09264) — Studies dependency substitution induced through shared agent rule files.
@@ -247,6 +257,9 @@ These resources explain model behavior, fine-tuning, and supply-chain risks. Ref
 - [SoK: PIAtlas](https://arxiv.org/abs/2610.24999) — Organizes prompt injection techniques by subversion mechanism and maps public datasets into a shared taxonomy.
 - [After the Attacker Leaves](https://arxiv.org/abs/2610.28425) — Introduces CarryoverBench for attacks persisting through memory files and scheduled tasks.
 - [Agentic AI Defense: Decode-Time Provenance Binding for MCP](https://arxiv.org/abs/2610.31974) — Examines cross-modal trust laundering and proposes provenance tracking for decoded tool content.
+- [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) — Measures how requests resolve to an attacker-operated server when MCP tool metadata is not bound to a verified provider; results come from one simulated task and five clients.
+- [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) — Reports that the train-time success rate of RL red-teamers does not predict robustness after adversarial training, and proposes guiding red-teaming by attack-strategy coverage.
+- [Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents](https://arxiv.org/abs/2611.25599) — Observes the side effects of agent actions in a sandbox and admits them only under a formally verifiable stateful policy.
 
 ## Blogs and explainers
 
