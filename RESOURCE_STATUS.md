@@ -84,10 +84,10 @@
 | [SoK: PIAtlas](https://arxiv.org/abs/2610.24999) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2610.24999) | 2026-11-08 |
 | [After the Attacker Leaves](https://arxiv.org/abs/2610.28425) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2610.28425) | 2026-11-08 |
 | [Agentic AI Defense: Decode-Time Provenance Binding for MCP](https://arxiv.org/abs/2610.31974) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2610.31974) | 2026-11-08 |
-| [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.21577) | 2026-11-23 |
-| [Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills](https://arxiv.org/abs/2611.24185) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.24185) | 2026-11-23 |
-| [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.24362) | 2026-11-23 |
-| [Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents](https://arxiv.org/abs/2611.25599) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.25599) | 2026-11-23 |
+| [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.21577) | 2026-11-22 |
+| [Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills](https://arxiv.org/abs/2611.24185) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.24185) | 2026-11-22 |
+| [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.24362) | 2026-11-22 |
+| [Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents](https://arxiv.org/abs/2611.25599) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.25599) | 2026-11-22 |
 
 ## 工具與模型 / Tools and models
 

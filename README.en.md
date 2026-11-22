@@ -231,7 +231,7 @@ These resources explain model behavior, fine-tuning, and supply-chain risks. Ref
 
 ## 2026 research watchlist
 
-**All entries below are arXiv preprints.** Titles and abstracts were checked on 2026-11-08 (entries beginning with 2611 on 2026-11-23); peer-review or acceptance status was not independently established. Descriptions summarize proposed methods or reported experiments, rather than validated deployment guarantees.
+**All entries below are arXiv preprints.** Titles and abstracts were checked on 2026-11-08 (entries beginning with 2611 on 2026-11-22); peer-review or acceptance status was not independently established. Descriptions summarize proposed methods or reported experiments, rather than validated deployment guarantees.
 
 - [Prismata: Confining Cross-Site Prompt Injection in Web Agents](https://arxiv.org/abs/2607.08147) — Studies confinement of cross-site prompt injection in web-agent workflows.
 - [Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files](https://arxiv.org/abs/2610.09264) — Studies dependency substitution induced through shared agent rule files.

@@ -231,7 +231,7 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 
 ## 2026 年研究追蹤
 
-**以下資源皆以 arXiv preprint 版本收錄。** 標題與摘要已於 2026-11-08 核對（2611 開頭的條目於 2026-11-23 核對），但未逐篇獨立確認 peer review 或 acceptance 狀態。短評整理的是提出的方法或回報的實驗，不能直接視為實際部署的安全保證。
+**以下資源皆以 arXiv preprint 版本收錄。** 標題與摘要已於 2026-11-08 核對（2611 開頭的條目於 2026-11-22 核對），但未逐篇獨立確認 peer review 或 acceptance 狀態。短評整理的是提出的方法或回報的實驗，不能直接視為實際部署的安全保證。
 
 - [Prismata: Confining Cross-Site Prompt Injection in Web Agents](https://arxiv.org/abs/2607.08147) — 研究如何限制 web agent 工作流程中的 cross-site prompt injection。
 - [Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files](https://arxiv.org/abs/2610.09264) — 研究透過共享的 agent rule file 誘發 dependency substitution。
