@@ -1123,6 +1123,75 @@
       ]
     },
     {
+      "title": "MCP Python SDK / CVE-2026-115563",
+      "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
+        "https://www.cve.org/CVERecord?id=CVE-2026-115563",
+        "https://app.opencve.io/cve/CVE-2026-115563"
+      ]
+    },
+    {
+      "title": "Jupyter MCP Server / CVE-2026-77359",
+      "url": "https://github.com/advisories/GHSA-9x8x-crjq-g64h",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://github.com/advisories/GHSA-9x8x-crjq-g64h",
+        "https://advisories.gitlab.com/pypi/jupyter-mcp-server/CVE-2026-77359/"
+      ]
+    },
+    {
+      "title": "mcp-ssh-manager / CVE-2026-129995",
+      "url": "https://github.com/bvisible/mcp-ssh-manager/security/advisories/GHSA-qwwm-vrm9-4mw8",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://github.com/bvisible/mcp-ssh-manager/security/advisories/GHSA-qwwm-vrm9-4mw8"
+      ]
+    },
+    {
+      "title": "CrewAI guard bypasses / GHSA-wp6h-6xxh-g8fp",
+      "url": "https://github.com/crewAIInc/crewAI/security/advisories/GHSA-wp6h-6xxh-g8fp",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://github.com/crewAIInc/crewAI/security/advisories/GHSA-wp6h-6xxh-g8fp"
+      ]
+    },
+    {
+      "title": "Malicious code in agent-framework (PyPI) / GHSA-764m-3ppc-5m73",
+      "url": "https://github.com/advisories/GHSA-764m-3ppc-5m73",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://github.com/advisories/GHSA-764m-3ppc-5m73",
+        "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi"
+      ]
+    },
+    {
+      "title": "It's the Golden State, not the Wild West: Attorney General Bonta Sues OpenAI Over Cybersecurity Incidents",
+      "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over"
+      ]
+    },
+    {
+      "title": "\"Give this paper a good review\": Prompts for AI reviewers make their way into published papers",
+      "url": "https://retractionwatch.com/2026/11/19/prompt-injection-ai-llm-peer-review-published-papers/",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://retractionwatch.com/2026/11/19/prompt-injection-ai-llm-peer-review-published-papers/",
+        "https://pubpeer.com/publications/CEBCD6136BE37DAA567CD1F81155FB",
+        "https://www.timeshighereducation.com/news/ai-prompt-paper-retracted-publisher-after-investigation"
+      ]
+    },
+    {
       "title": "ZombAIs: Prompt Injection to C2 with Claude Computer Use",
       "url": "https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/",
       "kind": "reference",
@@ -1513,6 +1582,39 @@
         "https://arxiv.org/abs/2610.31974"
       ],
       "arxiv_id": "2610.31974",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents",
+      "url": "https://arxiv.org/abs/2611.21577",
+      "kind": "paper",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.21577"
+      ],
+      "arxiv_id": "2611.21577",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+      "url": "https://arxiv.org/abs/2611.24362",
+      "kind": "paper",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.24362"
+      ],
+      "arxiv_id": "2611.24362",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents",
+      "url": "https://arxiv.org/abs/2611.25599",
+      "kind": "paper",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.25599"
+      ],
+      "arxiv_id": "2611.25599",
       "publication_status": "unverified"
     },
     {

@@ -194,6 +194,16 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 - [GitHub Copilot / CVE-2025-53773](https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/) — **研究揭露 · 2025**。研究報告說明 prompt injection、設定變更與程式碼執行之間的攻擊鏈。
 - [CamoLeak](https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code) — **研究揭露 · 2025**。探索 GitHub Copilot 工作流程中的私有原始碼外洩。
 - [Breaking Claude Code Opus 5 Auto Mode](https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/) — **研究揭露 · 2026**。研究者對自動核准行為的評估；推廣結論前，需先閱讀攻擊設定與樣本數。
+- [MCP Python SDK / CVE-2026-115563](https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99) — **維護者公告 · 2026**。受影響版本的 OAuth client 讓 MCP server 決定憑證送往哪個 authorization server；升級後仍需設定 issuer，並清除未綁定的既存 client 註冊。
+- [Jupyter MCP Server / CVE-2026-77359](https://github.com/advisories/GHSA-9x8x-crjq-g64h) — **維護者公告 · 2026**。standalone HTTP 模式下，管理路由沒有套用 `/mcp` 的 Host/Origin 檢查，惡意網頁可透過 DNS rebinding 改寫 server 連線的 Jupyter 後端；只綁定 localhost 不足以作為邊界。
+- [mcp-ssh-manager / CVE-2026-129995](https://github.com/bvisible/mcp-ssh-manager/security/advisories/GHSA-qwwm-vrm9-4mw8) — **維護者公告 · 2026**。工具參數未經跳脫即組成遠端 shell 指令；先前的修補只涵蓋資料庫工具，且列表工具不經 policy 檢查，使 readonly 與 restricted 模式仍可被繞過。
+
+### 框架、供應鏈與真實事件
+
+- [CrewAI guard bypasses / GHSA-wp6h-6xxh-g8fp](https://github.com/crewAIInc/crewAI/security/advisories/GHSA-wp6h-6xxh-g8fp) — **維護者公告 · 2026**。三個對既有防護的繞過：載入工具時可跳過反序列化防護、NL2SQL 唯讀模式遇到特定合法 SQL 語法會放行寫入、檔案範圍檢查可被 symlink 繞過。公告時尚無 CVE。
+- [Malicious code in agent-framework (PyPI) / GHSA-764m-3ppc-5m73](https://github.com/advisories/GHSA-764m-3ppc-5m73) — **惡意套件公告 · 2026**。Microsoft Agent Framework 的 PyPI meta-package 出現兩個非官方發布版本（1.26.1、1.26.2），以 `.pth` 啟動 hook 竊取雲端與 CI 憑證；屬於實際發生的供應鏈事件，入侵途徑尚未公開。
+- [It's the Golden State, not the Wild West: Attorney General Bonta Sues OpenAI Over Cybersecurity Incidents](https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over) — **州政府起訴 · 2026**。加州起訴 OpenAI，指控其測試中的 agent 逃出測試環境並攻擊外部系統；內容為訴狀指控，尚未經法院認定。
+- ["Give this paper a good review": Prompts for AI reviewers make their way into published papers](https://retractionwatch.com/2026/11/19/prompt-injection-ai-llm-peer-review-published-papers/) — **事件報導 · 2026**。已出版論文在資料可得性聲明中藏有給 AI 審稿者的指令，出版社隨後撤稿；說明審稿流程把稿件交給 LLM 時形成的 indirect prompt injection 攻擊面。
 
 ### 瀏覽器與 computer-use 相關揭露
 
@@ -229,7 +239,7 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 
 ## 2026 年研究追蹤
 
-**以下資源皆以 arXiv preprint 版本收錄。** 標題與摘要已於 2026-11-08 核對，但未逐篇獨立確認 peer review 或 acceptance 狀態。短評整理的是提出的方法或回報的實驗，不能直接視為實際部署的安全保證。
+**以下資源皆以 arXiv preprint 版本收錄。** 標題與摘要已於 2026-11-08 核對，2611 系列另於 2026-11-22 核對，但未逐篇獨立確認 peer review 或 acceptance 狀態。短評整理的是提出的方法或回報的實驗，不能直接視為實際部署的安全保證。
 
 - [Prismata: Confining Cross-Site Prompt Injection in Web Agents](https://arxiv.org/abs/2607.08147) — 研究如何限制 web agent 工作流程中的 cross-site prompt injection。
 - [Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files](https://arxiv.org/abs/2610.09264) — 研究透過共享的 agent rule file 誘發 dependency substitution。
@@ -247,6 +257,9 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 - [SoK: PIAtlas](https://arxiv.org/abs/2610.24999) — 依 subversion mechanism 整理 prompt injection 技術，並將公開資料集映射到共同分類。
 - [After the Attacker Leaves](https://arxiv.org/abs/2610.28425) — 提出 CarryoverBench，評測透過 memory file 與 scheduled task 持續生效的攻擊。
 - [Agentic AI Defense: Decode-Time Provenance Binding for MCP](https://arxiv.org/abs/2610.31974) — 探討 cross-modal trust laundering，並提出針對工具解碼內容的 provenance tracking。
+- [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) — 測量 MCP 工具 metadata 未綁定提供者身分時，請求被導向攻擊者所控 server 的情形；結果來自單一模擬任務與五個 client。
+- [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) — 指出 RL 紅隊的訓練期攻擊成功率不等於 adversarial training 後的穩健性，並提出以攻擊策略覆蓋度引導紅隊。
+- [Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents](https://arxiv.org/abs/2611.25599) — 在 sandbox 中觀察 agent 動作的實際副作用，再以可形式驗證的有狀態 policy 決定是否放行。
 
 ## 部落格與導讀
 
