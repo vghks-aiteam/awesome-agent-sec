@@ -4,7 +4,7 @@
 
 本表由 `resources.json` 產生。更新資料後執行 `python3 check_catalog.py --write-status`。 / Generated from `resources.json`.
 
-收錄 139 個來源 URL；其中 68 篇 arXiv 論文有 8 篇已找到正式出版紀錄，其餘明列未確認。 / 8 of 68 papers have verified publication records.
+收錄 145 個來源 URL；其中 72 篇 arXiv 論文有 8 篇已找到正式出版紀錄，其餘明列未確認。 / 8 of 72 papers have verified publication records.
 
 - 「未確認 / Unverified」表示未獨立確認正式出版狀態，不代表已被拒絕或沒有通過 peer review。
 - Publisher index 表示核對官方搜尋索引中的出版 metadata；當時直接讀取頁面可能遇到 403 或 timeout。未進行論文結果重現。
@@ -84,6 +84,10 @@
 | [SoK: PIAtlas](https://arxiv.org/abs/2610.24999) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2610.24999) | 2026-11-08 |
 | [After the Attacker Leaves](https://arxiv.org/abs/2610.28425) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2610.28425) | 2026-11-08 |
 | [Agentic AI Defense: Decode-Time Provenance Binding for MCP](https://arxiv.org/abs/2610.31974) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2610.31974) | 2026-11-08 |
+| [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.21577) | 2026-11-22 |
+| [Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills](https://arxiv.org/abs/2611.24185) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.24185) | 2026-11-22 |
+| [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.24362) | 2026-11-22 |
+| [Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents](https://arxiv.org/abs/2611.25599) | 未確認 / Unverified | — | [arXiv](https://arxiv.org/abs/2611.25599) | 2026-11-22 |
 
 ## 工具與模型 / Tools and models
 

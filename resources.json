@@ -1577,6 +1577,70 @@
       "evidence_urls": [
         "https://embracethered.com/blog/"
       ]
+    },
+    {
+      "title": "Three breaches, endless leaks: Your AI supply chain needs canaries",
+      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+        "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+      ]
+    },
+    {
+      "title": "We caught the agent-framework PyPI compromise six minutes after it published",
+      "url": "https://www.elastic.co/security-labs/threat-command/we-caught-the-agent-framework-pypi-compromise-six-minutes-after-it-published",
+      "kind": "reference",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://www.elastic.co/security-labs/threat-command/we-caught-the-agent-framework-pypi-compromise-six-minutes-after-it-published",
+        "https://orca.security/resources/research/microsoft-agent-framework-pypi-supply-chain-attack-versions-1-26-1-and-1-26-2-steal-cloud-credentials/"
+      ]
+    },
+    {
+      "title": "When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents",
+      "url": "https://arxiv.org/abs/2611.21577",
+      "kind": "paper",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.21577"
+      ],
+      "arxiv_id": "2611.21577",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills",
+      "url": "https://arxiv.org/abs/2611.24185",
+      "kind": "paper",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.24185"
+      ],
+      "arxiv_id": "2611.24185",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+      "url": "https://arxiv.org/abs/2611.24362",
+      "kind": "paper",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.24362"
+      ],
+      "arxiv_id": "2611.24362",
+      "publication_status": "unverified"
+    },
+    {
+      "title": "Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents",
+      "url": "https://arxiv.org/abs/2611.25599",
+      "kind": "paper",
+      "checked_on": "2026-11-22",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.25599"
+      ],
+      "arxiv_id": "2611.25599",
+      "publication_status": "unverified"
     }
   ]
 }

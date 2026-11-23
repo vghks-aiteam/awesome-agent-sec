@@ -160,6 +160,8 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 - [Falco](https://github.com/falcosecurity/falco) — **工具**。提供 host 與 container 的 runtime 事件偵測，可用於觀察 agent 執行環境的系統層行為。
 - [OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html) — **指引**。說明安全事件記錄、敏感欄位處理與 log 保護，供工具呼叫 audit trail 設計參考。
 - [NIST SP 800-61 Revision 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **指引 · Rev. 3**。將事件應變整合到風險管理，可用於規劃 agent 事件的偵測、處置與復原流程。
+- [Three breaches, endless leaks: Your AI supply chain needs canaries](https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens) — **研究報告 · 2026**。在送往推論服務的 prompt 中埋入 canary token，追查 router、reseller 與 provider 之間的資料外流，可作為 agent 送出 context 的監測方法參考。
+- [We caught the agent-framework PyPI compromise six minutes after it published](https://www.elastic.co/security-labs/threat-command/we-caught-the-agent-framework-pypi-compromise-six-minutes-after-it-published) — **事件報告 · 2026**。第一方偵測紀錄，說明 agent 框架套件遭植入 `.pth` 啟動 hook 竊取雲端與 CI 憑證的時間軸與處置步驟。
 
 ## 紅隊與 guardrail 工具
 
@@ -229,7 +231,7 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 
 ## 2026 年研究追蹤
 
-**以下資源皆以 arXiv preprint 版本收錄。** 標題與摘要已於 2026-11-08 核對，但未逐篇獨立確認 peer review 或 acceptance 狀態。短評整理的是提出的方法或回報的實驗，不能直接視為實際部署的安全保證。
+**以下資源皆以 arXiv preprint 版本收錄。** 標題與摘要已於 2026-11-08 核對（2611 開頭的條目於 2026-11-22 核對），但未逐篇獨立確認 peer review 或 acceptance 狀態。短評整理的是提出的方法或回報的實驗，不能直接視為實際部署的安全保證。
 
 - [Prismata: Confining Cross-Site Prompt Injection in Web Agents](https://arxiv.org/abs/2607.08147) — 研究如何限制 web agent 工作流程中的 cross-site prompt injection。
 - [Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files](https://arxiv.org/abs/2610.09264) — 研究透過共享的 agent rule file 誘發 dependency substitution。
@@ -247,6 +249,10 @@ Prompt injection 關心應用程式的指令與信任邊界；jailbreak 關心�
 - [SoK: PIAtlas](https://arxiv.org/abs/2610.24999) — 依 subversion mechanism 整理 prompt injection 技術，並將公開資料集映射到共同分類。
 - [After the Attacker Leaves](https://arxiv.org/abs/2610.28425) — 提出 CarryoverBench，評測透過 memory file 與 scheduled task 持續生效的攻擊。
 - [Agentic AI Defense: Decode-Time Provenance Binding for MCP](https://arxiv.org/abs/2610.31974) — 探討 cross-modal trust laundering，並提出針對工具解碼內容的 provenance tracking。
+- [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) — 量測多個 MCP server 並存時，client 是否會把呼叫綁到攻擊者提供的同名或相似工具。
+- [Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills](https://arxiv.org/abs/2611.24185) — 提出 SkillCFI，從 skill 編譯出可執行 contract，由確定性的 runtime 檢查 agent 的工具請求是否符合流程。
+- [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) — 指出 RL 紅隊方法的 mode collapse 問題，並以 purple-teaming 搭配 adversarial training 強化 agent 對 indirect prompt injection 的抵抗力。
+- [Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents](https://arxiv.org/abs/2611.25599) — 在 sandbox 中先執行 agent 動作，依系統呼叫推斷語意，再以可形式驗證的 stateful policy 決定是否放行。
 
 ## 部落格與導讀
 

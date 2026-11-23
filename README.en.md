@@ -160,6 +160,8 @@ These general-purpose building blocks address agent identity, authorization, and
 - [Falco](https://github.com/falcosecurity/falco) — **Tool.** Detects host and container runtime events relevant to the system behavior of agent execution environments.
 - [OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html) — **Guidance.** Security event logging, sensitive-field handling, and log protection for tool-call audit trails.
 - [NIST SP 800-61 Revision 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **Guidance · Rev. 3.** Integrates incident response with risk management, supporting detection, response, and recovery planning.
+- [Three breaches, endless leaks: Your AI supply chain needs canaries](https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens) — **Research report · 2026.** Seeds canary tokens in prompts sent to inference services to trace leakage across routers, resellers, and providers; a monitoring pattern for context that agents send out.
+- [We caught the agent-framework PyPI compromise six minutes after it published](https://www.elastic.co/security-labs/threat-command/we-caught-the-agent-framework-pypi-compromise-six-minutes-after-it-published) — **Incident report · 2026.** First-hand detection timeline and response steps for an agent-framework package release that used a `.pth` startup hook to steal cloud and CI credentials.
 
 ## Red teaming and guardrails
 
@@ -229,7 +231,7 @@ These resources explain model behavior, fine-tuning, and supply-chain risks. Ref
 
 ## 2026 research watchlist
 
-**All entries below are arXiv preprints.** Titles and abstracts were checked on 2026-11-08; peer-review or acceptance status was not independently established. Descriptions summarize proposed methods or reported experiments, rather than validated deployment guarantees.
+**All entries below are arXiv preprints.** Titles and abstracts were checked on 2026-11-08 (entries beginning with 2611 on 2026-11-22); peer-review or acceptance status was not independently established. Descriptions summarize proposed methods or reported experiments, rather than validated deployment guarantees.
 
 - [Prismata: Confining Cross-Site Prompt Injection in Web Agents](https://arxiv.org/abs/2607.08147) — Studies confinement of cross-site prompt injection in web-agent workflows.
 - [Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files](https://arxiv.org/abs/2610.09264) — Studies dependency substitution induced through shared agent rule files.
@@ -247,6 +249,10 @@ These resources explain model behavior, fine-tuning, and supply-chain risks. Ref
 - [SoK: PIAtlas](https://arxiv.org/abs/2610.24999) — Organizes prompt injection techniques by subversion mechanism and maps public datasets into a shared taxonomy.
 - [After the Attacker Leaves](https://arxiv.org/abs/2610.28425) — Introduces CarryoverBench for attacks persisting through memory files and scheduled tasks.
 - [Agentic AI Defense: Decode-Time Provenance Binding for MCP](https://arxiv.org/abs/2610.31974) — Examines cross-modal trust laundering and proposes provenance tracking for decoded tool content.
+- [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) — Measures whether clients bind a call to an attacker-supplied tool with the same or a similar name when several MCP servers are connected.
+- [Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills](https://arxiv.org/abs/2611.24185) — Proposes SkillCFI, which compiles a skill into an executable contract that a deterministic runtime uses to admit or block tool requests.
+- [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) — Identifies mode collapse in RL-based red teaming and pairs purple teaming with adversarial training to harden agents against indirect prompt injection.
+- [Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents](https://arxiv.org/abs/2611.25599) — Runs proposed agent actions in a sandbox, infers their semantics from system calls, and admits them only under formally verifiable stateful policies.
 
 ## Blogs and explainers
 
